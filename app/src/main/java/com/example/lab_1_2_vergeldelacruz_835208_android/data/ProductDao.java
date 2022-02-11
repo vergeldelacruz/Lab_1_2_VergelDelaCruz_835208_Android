@@ -27,6 +27,6 @@ public interface ProductDao {
     @Query("SELECT * FROM product ORDER BY id")
     List<Product> getAllProducts();
 
-    @Query("SELECT * FROM product WHERE name like :search or description like :search ORDER BY name")
+    @Query("SELECT * FROM product WHERE name like '%' || :search || '%' or description like '%' || :search || '%' ORDER BY name")
     List<Product> getAllProductsMatchingNameOrDesc(String search);
 }
