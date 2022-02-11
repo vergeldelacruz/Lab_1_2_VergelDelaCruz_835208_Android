@@ -4,7 +4,9 @@ package com.example.lab_1_2_vergeldelacruz_835208_android;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,8 +69,30 @@ public class ProductAdapter extends ArrayAdapter {
                 deleteProduct(product);
             }
         });
+        view.findViewById(R.id.btn_view_map).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewProductInMap(product);
+            }
+        });
+
         return view;
     }
+    public void viewProductInMap(Product product) {
+        /*
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.dialog_map_product,null);
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show(); */
+        Intent i = new Intent(getContext(),ProductMapsActivity.class);
+        i.putExtra("name",product.getName());
+        i.putExtra("latitude",product.getLatitude());
+        i.putExtra("longitude",product.getLongitude());
+        getContext().startActivity(i);
+    }
+
     public void updateProduct(Product product) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         LayoutInflater layoutInflater = LayoutInflater.from(context);

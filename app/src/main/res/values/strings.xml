@@ -16,4 +16,6 @@
     <string name="total_product_count">Total Product Count:</string>
     <string name="enter_search">Enter product name/desciption</string>
     <string name="search_product">Search</string>
+    <string name="title_activity_product_maps">ProductMapsActivity</string>
+    <string name="view_map_btn_text">View Map</string>
 </resources>
