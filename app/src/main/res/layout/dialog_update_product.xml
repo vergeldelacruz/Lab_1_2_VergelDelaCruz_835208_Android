@@ -46,14 +46,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_latitude"
-            android:inputType="number" />
+            android:inputType="numberSigned" />
 
         <EditText
             android:id="@+id/et_longitude"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/enter_longitude"
-            android:inputType="number" />
+            android:inputType="numberSigned" />
 
         <Button
             android:id="@+id/btn_update_product"
