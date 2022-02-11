@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/dialog_add_product.xml" value="0.1" />
+        <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/activity_product_maps.xml" value="0.1" />
+        <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/dialog_add_product.xml" value="0.16666666666666666" />
+        <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/dialog_map_product.xml" value="0.1" />
         <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/dialog_update_product.xml" value="0.10240963855421686" />
         <entry key="..\:/Vergel/Lab_1_2_VergelDelaCruz_835208_Android/app/src/main/res/layout/list_layout_product.xml" value="0.1" />
       </map>

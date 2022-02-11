@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_search_product = findViewById(R.id.btn_search_product);
         btn_search_product.setOnClickListener(this);
         et_search = findViewById(R.id.et_search);
-        loadProducts(); 
+        loadProducts();
     }
     private void loadProducts() {
         productList = productRoomDatabase.productDao().getAllProducts();

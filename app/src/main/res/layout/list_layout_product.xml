@@ -51,7 +51,11 @@
             android:layout_height="wrap_content"
             android:text="@string/delete_btn_text"
             android:id="@+id/btn_delete"/>
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_map_btn_text"
+            android:id="@+id/btn_view_map"/>
 
     </LinearLayout>
 </LinearLayout>

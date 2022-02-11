@@ -17,6 +17,7 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
+
         <EditText
             android:id="@+id/et_name"
             android:layout_width="match_parent"
