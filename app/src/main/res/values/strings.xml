@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lab_1_2_VergelDelaCruz_835208_Android</string>
+    <string name="row_name">Name</string>
+    <string name="description">Description</string>
+    <string name="price">Price</string>
+    <string name="update_btn_text">Update</string>
+    <string name="delete_btn_text">Delete</string>
+    <string name="update_product">Update Product</string>
+    <string name="enter_employee_name">Enter Name</string>
+    <string name="enter_the_price">Enter Price</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="enter_latitude">Enter Latitude</string>
+    <string name="enter_longitude">Enter Longitude</string>
+    <string name="save_product">Save</string>
+    <string name="add_product">Add Product</string>
+    <string name="total_product_count">Total Product Count:</string>
+    <string name="enter_search">Enter product name/desciption</string>
+    <string name="search_product">Search</string>
+</resources>
