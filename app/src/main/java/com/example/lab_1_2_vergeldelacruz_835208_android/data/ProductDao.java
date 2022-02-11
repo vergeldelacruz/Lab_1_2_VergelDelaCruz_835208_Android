@@ -24,7 +24,7 @@ public interface ProductDao {
     @Query("UPDATE product SET name = :name, description = :description, latitude = :latitude, longitude = :longitude, price = :price  WHERE id = :id")
     int updateProduct(int id, String name, String description, String latitude, String longitude, double price);
 
-    @Query("SELECT * FROM product ORDER BY name")
+    @Query("SELECT * FROM product ORDER BY id")
     List<Product> getAllProducts();
 
     @Query("SELECT * FROM product WHERE name like :search or description like :search ORDER BY name")
