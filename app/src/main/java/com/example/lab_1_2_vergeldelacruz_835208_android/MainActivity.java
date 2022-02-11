@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.lab_1_2_vergeldelacruz_835208_android.entity.Product;
 import com.example.lab_1_2_vergeldelacruz_835208_android.util.ProductRoomDatabase;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private List<Product> productList;
     private ListView lv_products;
     private TextView tv_total_product_count;
-    private Button btn_add_product;
     private Button btn_search_product;
     private EditText et_search;
 
@@ -34,11 +34,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         productRoomDatabase = ProductRoomDatabase.getInstance(this);
         lv_products = findViewById(R.id.lv_products);
         tv_total_product_count =  findViewById(R.id.tv_total_product_count);
-        btn_add_product = findViewById(R.id.btn_add_product);
-        btn_add_product.setOnClickListener(this);
+
         btn_search_product = findViewById(R.id.btn_search_product);
         btn_search_product.setOnClickListener(this);
         et_search = findViewById(R.id.et_search);
+
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addProduct();
+            }
+        });
         loadProducts();
     }
     private void loadProducts() {
@@ -51,12 +58,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_add_product:
-                addProduct();
-                break;
-            case R.id.btn_search_product:
-                searchProducts();
+        String search = et_search.getText().toString().trim();
+        if (search.isEmpty()) {
+            loadProducts();
+        } else {
+            searchProducts();
         }
     }
     public void addProduct() {

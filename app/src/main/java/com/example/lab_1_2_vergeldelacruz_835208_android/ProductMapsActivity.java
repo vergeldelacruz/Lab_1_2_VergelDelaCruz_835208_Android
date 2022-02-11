@@ -1,5 +1,7 @@
 package com.example.lab_1_2_vergeldelacruz_835208_android;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
@@ -13,7 +15,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.lab_1_2_vergeldelacruz_835208_android.databinding.ActivityProductMapsBinding;
 
 public class ProductMapsActivity extends FragmentActivity implements OnMapReadyCallback {
-
     private GoogleMap mMap;
     private ActivityProductMapsBinding binding;
     private String name;
@@ -25,7 +26,12 @@ public class ProductMapsActivity extends FragmentActivity implements OnMapReadyC
 
         binding = ActivityProductMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+    /*
+        ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setHomeButtonEnabled(true);
+*/
         Bundle b = getIntent().getExtras();
         name = b.getString("name");
         latitude = b.getString("latitude");

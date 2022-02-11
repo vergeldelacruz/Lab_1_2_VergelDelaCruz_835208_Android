@@ -47,12 +47,16 @@
             android:text="@string/update_btn_text"
             />
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/delete_btn_text"
+            android:backgroundTint="#FF0000"
+            android:layout_margin="5dp"
+
             android:id="@+id/btn_delete"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/view_map_btn_text"
             android:id="@+id/btn_view_map"/>

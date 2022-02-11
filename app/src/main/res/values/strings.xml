@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lab_1_2_VergelDelaCruz_835208_Android</string>
+    <string name="app_name">Product App</string>
     <string name="row_name">Name</string>
     <string name="description">Description</string>
     <string name="price">Price</string>
@@ -14,7 +14,7 @@
     <string name="save_product">Save</string>
     <string name="add_product">Add Product</string>
     <string name="total_product_count">Total Product Count:</string>
-    <string name="enter_search">Enter product name/desciption</string>
+    <string name="enter_search">Enter product name/description</string>
     <string name="search_product">Search</string>
     <string name="title_activity_product_maps">ProductMapsActivity</string>
     <string name="view_map_btn_text">View Map</string>
